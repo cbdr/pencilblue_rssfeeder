@@ -67,7 +67,7 @@ module.exports = function RSSFeederServiceModule(pb) {
   
   function getSettings(self, cb) {
     var pluginService = new pb.PluginService(self.site);
-    pluginService.getSettingsKV('rssfeeder', function(err, rssFeederSettings) {
+    pluginService.getSettingsKV('pencilblue_rssfeeder', function(err, rssFeederSettings) {
       if (util.isError(err)) {
         cb(err, null);
       }
